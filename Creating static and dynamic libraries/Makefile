@@ -36,7 +36,7 @@ dynamic_lib:
 	@gcc main.o -L. -lfsdyn -o rezult_dynamic
 	
 	@#LD_LIBRARY_PATH=/home/pavel/5module/5LR     Эти три строки не будут работать, т.к. в Makefile 
-	@#export LD_LIBRARY_PATH                      каждая строка выполняется отдельном процессе, которые
+	@#export LD_LIBRARY_PATH                      каждая строка выполняется в отдельном процессе, которые
 	@#./rezult_dynamic                            наследуют собственные переменные среды, установленные в его области видимости
 
 	@# Устанавливаем переменную среды и вызываем наш файл
